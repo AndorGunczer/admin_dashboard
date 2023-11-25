@@ -81,6 +81,42 @@ body {
     align-content: center;
 }
 
+.header {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, 50%);
+}
+
+.header>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.header>div:nth-child(1)>div:nth-child(1) {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 50%;
+}
+
+#searchbar {
+    width: max(200px, 80%);
+}
+
+.header>div:nth-child(1)>div:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+}
+
+.header>div>div>img {
+    height: 32px;
+    width: 32px;
+}
+
 /* #dash_logo h1::before {
     content: url("./icons/view-dashboard.svg");
     display: inline-block;
