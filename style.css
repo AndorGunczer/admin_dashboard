@@ -1,0 +1,33 @@
+html, body {
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    grid-template-areas:
+    "dashboard header header header header"
+    "dashboard main main main main"
+    "dashboard main main main main"
+    "dashboard main main main main"
+    "dashboard main main main main";
+    height: 100%;
+    width: 100%;
+}
+
+.dashboard {
+    grid-area: dashboard;
+}
+
+.header {
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+}
+
+.container div {
+    border: 1px solid black;
+}
