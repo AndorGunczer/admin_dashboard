@@ -6,6 +6,8 @@ body {
     font-family: sans-serif;
 }
 
+/* TOP-LEVEL LAYOUT */
+
 .container {
     display: grid;
     grid-template-columns: repeat(5, 20%);
@@ -39,6 +41,8 @@ body {
 .container div {
     border: 1px solid black;
 }
+
+/* DASHBOARD SECTION */
 
 #dash_logo {
     display: flex;
@@ -81,35 +85,47 @@ body {
     align-content: center;
 }
 
+/* HEADER SECTION */
+
 .header {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 50%);
 }
 
-.header>div:nth-child(1) {
+/* TOP HEADER SECTION */
+
+.top_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
 }
 
-.header>div:nth-child(1)>div:nth-child(1) {
+.searchbar_div {
     display: flex;
     justify-content: left;
     align-items: center;
-    width: 50%;
+    height: 100%;
+    width: 66.5%;
 }
 
 #searchbar {
+    height: min(25px, 45%);
     width: max(200px, 80%);
 }
 
-.header>div:nth-child(1)>div:nth-child(2) {
+#searchbar_icon {
+    margin: auto 10px auto 30px;
+}
+
+.user_controls {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    width: 50%;
+    gap: max(10px, 10%);
+    max-height: 100%;
+    width: 33.5%;
 }
 
 .header>div>div>img {
@@ -117,10 +133,40 @@ body {
     width: 32px;
 }
 
-/* #dash_logo h1::before {
-    content: url("./icons/view-dashboard.svg");
-    display: inline-block;
-    height: 32px;
-    width: 32px;
-    margin-top: 2px;
-} */
+/* BOTTOM HEADER SECTION */
+
+.bottom_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom_header_start {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    max-height: 100%;
+    width: 70%;
+}
+
+#bottom_header_img {
+    margin: auto 15px auto 30px;
+}
+
+.bottom_header_start p, .bottom_header_start h2{
+    margin: 4px;
+}
+
+.bottom_header_end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(5px, 10%, 15px);
+    max-height: 100%;
+    width: 30%;
+}
+
+.bottom_header_end > button {
+    height: 30px;
+    width: 100px;
+}
