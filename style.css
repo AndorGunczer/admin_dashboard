@@ -211,5 +211,35 @@ body {
 
 /* MAIN > ANNOUNCEMENTS LAYOUT */
 
+.announcements {
+    display: flex;
+    flex-direction: column;
+}
 
+.announcements_container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 
+.announcement {
+    padding: 1rem;
+    border-bottom: 1px solid grey;
+    flex-grow: 1;
+}
+
+/* MAIN > TRENDING LAYOUT */
+
+.trending {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.trend {
+    display: flex;
+}
