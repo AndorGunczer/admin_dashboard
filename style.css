@@ -226,18 +226,29 @@ body {
 .announcements {
     display: flex;
     flex-direction: column;
+    /* max-height:  */
 }
 
 .announcements_container {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    max-height: 270px;
+    overflow: hidden;
 }
 
 .announcement {
-    padding: 1rem;
+    padding: clamp(5px , 0.8rem, 30px);
     border-bottom: 1px solid grey;
     flex-grow: 1;
+    max-height: 90px;
+}
+
+.announcement h3, .announcement p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 5px;
 }
 
 /* MAIN > TRENDING LAYOUT */
