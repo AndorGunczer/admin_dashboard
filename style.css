@@ -1,5 +1,6 @@
 html, body {
     height: 100%;
+    margin: 0;
 }
 
 body {
@@ -261,8 +262,18 @@ body {
 .trending_container {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
+    max-height: 270px;
 }
 
 .trend {
     display: flex;
+    align-items: center;
+    flex-grow: 1;
+    max-height: 90px;
+}
+
+.trend img {
+    height: 48px;
+    width: 48px;
 }
